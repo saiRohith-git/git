@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="super.css">
+    <title>SuperAuto - Super Cars</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="main-nav">
+            <div class="logo-name">
+                <li><img src="./images/logo.png" alt="SuperAuto" style="width: 170px;"></li>
+                <li><h3>Super Auto</h3></li>
+            </div>
+            <ul class="main-menu">
+                <li><a href="index.html" class="index">Home</a></li>
+                <li><a href="#" class="super">Super</a></li>
+                <li><a href="hyper.html" class="hyper">Hyper</a></li>
+                <li><a href="electric.html" class="electric">Electric</a></li>
+                <li><a href="newreleases.html" class="newreleases">New Releases</a></li>
+            </ul>
+        </nav>
+
+        <div class="gallery-section">
+            <div class="inner-width">
+                <!-- <h1>My Gallery</h1> -->
+                <div class="gallery">
+        
+                  <a href="images/1img.jpg" class="image">
+                    <img src="images/1img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/2img.jpg" class="image">
+                    <img src="images/2img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/3img.jpg" class="image">
+                    <img src="images/3img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/5img.jpg" class="image">
+                    <img src="images/5img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/6img.jpg" class="image">
+                    <img src="images/6img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/7img.jpg" class="image">
+                    <img src="images/7img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/8img.jpg" class="image">
+                    <img src="images/8img.jpg" alt="">
+                  </a>
+        
+                  <a href="images/9img.jpg" class="image">
+                    <img src="images/9img.jpg" alt="">
+                  </a>
+
+                  <a href="images/12img.jpg" class="image">
+                    <img src="images/12img.jpg" alt="">
+                  </a>
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(".gallery").magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery:{
+            enabled: true
+          }
+        });
+    </script>
+        <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+        </script>
+</body>
+</html>

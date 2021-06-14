@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hyper.css">
+    <title>SuperAuto - Hyper Cars</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="main-nav">
+            <div class="logo-name">
+                <li><img src="./images/logo.png" alt="SuperAuto" style="width: 170px;"></li>
+                <li><h3>Super Auto</h3></li>
+            </div>
+            <ul class="main-menu">
+                <li><a href="index.html" class="index">Home</a></li>
+                <li><a href="super.html" class="super">Super</a></li>
+                <li><a href="#" class="hyper">Hyper</a></li>
+                <li><a href="electric.html" class="electric">Electric</a></li>
+                <li><a href="newreleases.html" class="newreleases">New Releases</a></li>
+            </ul>
+        </nav>
+
+        <div class="gallery-section">
+            <div class="inner-width">
+                <!-- <h1>My Gallery</h1> -->
+                <div class="gallery">
+        
+                  <a href="hyper/himg1.jpg" class="image">
+                    <img src="hyper/himg1.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg2.jpg" class="image">
+                    <img src="hyper/himg2.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg3.jpg" class="image">
+                    <img src="hyper/himg3.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg4.jpg" class="image">
+                    <img src="hyper/himg4.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg5.jpg" class="image">
+                    <img src="hyper/himg5.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg6.jpg" class="image">
+                    <img src="hyper/himg6.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg7.jpg" class="image">
+                    <img src="hyper/himg7.jpg" alt="">
+                  </a>
+        
+                  <a href="hyper/himg8.jpg" class="image">
+                    <img src="hyper/himg8.jpg" alt="">
+                  </a>
+
+                  <a href="hyper/himg9.jpg" class="image">
+                    <img src="hyper/himg9.jpg" alt="">
+                  </a>
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled: true
+        }
+      });
+  </script>
+      <script>
+      document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+      </script>
+</body>
+</html>
